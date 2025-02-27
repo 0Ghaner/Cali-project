@@ -1,0 +1,261 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Impede a rolagem lateral */
+}
+
+.titulo {
+    font-family: "Arsenal SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+    background-color: rgb(57, 57, 57);
+}
+
+.nav-link {
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+    }
+
+    section {
+        display: flex;
+        width: 100%; /* 90% da largura da tela */
+        height: 70%; /* 80% da altura da tela */
+    }
+
+    header {
+        position: fixed; /* Mantém o header fixo no topo da página */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(57, 57, 57);
+        transition: background-color 0.3s ease-in-out;
+        z-index: 1000; /* Mantém o header acima dos outros elementos */
+    }    
+
+    header.scrolled {
+        background-color: rgba(57, 57, 57, 0.644); /* Cor transparente ao rolar */
+    }
+
+
+    header img {
+        width: 3%;
+        padding-right: 10px;
+    }
+
+    #inicio img{
+        height: 100%;
+        width: 100%;
+        filter: brightness(50%);
+        
+    }
+
+    .carousel-control-prev, 
+    .carousel-control-next {
+        width: 5%; /* Ajuste conforme necessário */
+        top: 45vh; /* Centraliza verticalmente */
+        transform: translateY(-70%); 
+    }
+
+    .carousel-indicators {
+        top: 65vh;
+    }
+
+    .carousel-caption {
+        top: 40%;
+    }
+
+    h2 {
+        font-size: 3em;
+        padding-bottom: 10px;
+    }
+
+    .carousel-item a{
+        width: 10em;
+        
+    }
+
+    section#products-section {
+        background: linear-gradient(to bottom, rgb(57, 57, 57), white);
+        width: 100%; /* Ajustado de 100vw para 100% */
+        height: auto;
+        min-height: 80vh;
+        position: relative; /* Em vez de absolute */
+    }
+
+    .product {
+        text-align: center; /* Centraliza tudo dentro do .product */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os elementos horizontalmente */
+        justify-content: center; /* Centraliza verticalmente se necessário */
+    }
+
+    .product a {
+        outline: none;
+        text-transform: uppercase;
+    }
+    
+
+    .product img{
+        max-width: 100%;
+        transition: filter 0.3s ease-in-out; /* Suaviza a transição */
+        border-top-left-radius: 8px; /* Mantém o mesmo arredondamento do card */
+        border-top-right-radius: 8px;
+    }
+
+    .product img:hover {
+        filter: brightness(30%);
+    }
+
+    .product img {
+        filter: brightness(95%);
+    }
+
+    .card-title {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border-radius: 1%;
+        font-family: "Arsenal SC", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    footer {
+        background-color: rgba(57, 57, 57, 0.768);
+        color: #fff;
+    }
+
+    footer button {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: flex;
+        max-width: 641px;
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        width: 100%; /* 90% da largura da tela */
+        height: 70%; /* 80% da altura da tela */
+    }
+
+    header {
+        position: fixed; /* Mantém o header fixo no topo da página */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(57, 57, 57);
+        transition: background-color 0.3s ease-in-out;
+        z-index: 1000; /* Mantém o header acima dos outros elementos */
+    }    
+
+    header.scrolled {
+        background-color: rgba(57, 57, 57, 0.644); /* Cor transparente ao rolar */
+    }
+
+
+    header img {
+        width: 3%;
+        padding-right: 10px;
+    }
+
+    #inicio img{
+        height: 100%;
+        width: 100%;
+        filter: brightness(50%);
+        
+    }
+
+    .carousel-control-prev, 
+    .carousel-control-next {
+        width: 5%; /* Ajuste conforme necessário */
+        top: 45vh; /* Centraliza verticalmente */
+        transform: translateY(-70%); 
+    }
+
+    .carousel-indicators {
+        top: 65vh;
+    }
+
+    .carousel-caption {
+        top: 40%;
+    }
+
+    h2 {
+        font-size: 3em;
+        padding-bottom: 10px;
+    }
+
+    .carousel-item a{
+        width: 10em;
+        
+    }
+
+    section#products-section {
+        background: linear-gradient(to bottom, rgb(57, 57, 57), white);
+        width: 100%; /* Ajustado de 100vw para 100% */
+        height: auto;
+        min-height: 80vh;
+        position: relative; /* Em vez de absolute */
+    }
+
+    .product {
+        text-align: center; /* Centraliza tudo dentro do .product */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os elementos horizontalmente */
+        justify-content: center; /* Centraliza verticalmente se necessário */
+    }
+
+    .product a {
+        outline: none;
+        text-transform: uppercase;
+    }
+    
+
+    .product img{
+        max-width: 100%;
+        transition: filter 0.3s ease-in-out; /* Suaviza a transição */
+        border-top-left-radius: 8px; /* Mantém o mesmo arredondamento do card */
+        border-top-right-radius: 8px;
+    }
+
+    .product img:hover {
+        filter: brightness(30%);
+    }
+
+    .product img {
+        filter: brightness(95%);
+    }
+
+    .card-title {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border-radius: 1%;
+        font-family: "Arsenal SC", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    footer {
+        background-color: rgba(57, 57, 57, 0.768);
+        color: #fff;
+    }
+
+    footer button {
+        color: white;
+    }
+}

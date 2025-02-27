@@ -1,0 +1,9 @@
+    .grid-products {
+        box-sizing: border-box;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        column-gap: 4%;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
