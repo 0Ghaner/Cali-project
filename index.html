@@ -23,42 +23,39 @@
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Início</a>
+                            <a class="nav-link" href="#inicio">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#products">Produtos</a>
+                            <a class="nav-link" href="#products-section">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#promocoes">Promoções</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div class="carousel-control" data-bs-spy="scroll" data-bs-target="#cabecalho">
         <section id="inicio" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div data-bs-interval="3000" class="carousel-item active">
-                <img class="d-block" src="img/planche.png" alt="planche">
-                <div class="carousel-caption">
+                <img class="d-block w-100" src="img/planche.png" alt="planche">
+                <div class="carousel-caption d-md-block">
                     <h2>Improve your workouts with<br><strong>high quality equipments</strong></h2>
                     <a href="#products" class="btn btn-dark">Shop</a>
                 </div>
             </div>
             <div data-bs-interval="3000" class="carousel-item">
-                <img class="d-block" src="img/Front.png" alt="front-lever">
-                <div class="carousel-caption">
+                <img class="d-block w-100" src="img/Front.png" alt="front-lever">
+                <div class="carousel-caption d-md-block">
                     <h2>Create your new<br><strong>Bundle</strong></h2>
                     <a href="#products" class="btn btn-dark">Equipments</a>
                     <a href="#products" class="btn btn-dark">Clothing</a>
                 </div>
             </div>
             <div data-bs-interval="3000" class="carousel-item">
-                <img class="d-block" src="img/rings.png" alt="calisthenics-rings">
-                <div class="carousel-caption">
+                <img class="d-block w-100" src="img/rings.png" alt="calisthenics-rings">
+                <div class="carousel-caption d-md-block">
                     <h2>Long term products<br><strong>with the best price</strong></h2>
                     <a href="#products" class="btn btn-dark">Contact us</a>
                 </div>
@@ -79,7 +76,7 @@
         <section id="products-section">
             <div id="products" class="products">
                 <div class="row justify-content-center">
-                    <div class="col-3">
+                    <div class="col-lg-4 col-md-5 col-sm-8 p-4">
                         <article class="card-item product">
                             <a class="text-decoration-none text-dark" href="#">
                                 <img src="img/paraletes.png" alt="tenis adidas"/>
@@ -89,7 +86,7 @@
                             <button class="btn btn-lg btn-dark w-100 p-2 py-3" type="button">+ Add to cart</button>
                         </article>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-4 col-md-5 col-sm-8 p-4">
                         <article class="card-item product">
                             <a class="text-decoration-none text-dark" href="#">
                                 <img src="img/pull-up-bar.png" alt="tenis nike"/>
@@ -99,7 +96,7 @@
                             <button class="btn btn-lg btn-dark w-100 p-2 py-3" type="button">+ Add to cart</button>
                         </article>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-4 col-md-5 col-sm-8 p-4">
                         <article class="card-item product">
                             <a class="text-decoration-none text-dark" href="#">
                                 <img src="img/rings-shop.png" alt="tenis under armor"/>
@@ -109,25 +106,55 @@
                             <button class="btn btn-lg btn-dark w-100 p-2 py-3" type="button">+ Add to cart</button>
                         </article>
                     </div>
+                    <div class="col-lg-4 col-md-5 col-sm-8 p-4">
+                        <article class="card-item product">
+                            <a class="text-decoration-none text-dark" href="#">
+                                <img src="img/half-bar.png" alt="half-bar"/>
+                                <h3 class="card card-title">half-bar</h3>
+                            </a>
+                            <p class="display-4 fw-bold">$89,90</p>
+                            <button class="btn btn-lg btn-dark w-100 p-2 py-3" type="button">+ Add to cart</button>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-8 p-4">
+                        <article class="card-item product">
+                            <a class="text-decoration-none text-dark" href="#">
+                                <img src="img/wheight-vest.png" alt="tenis under armor"/>
+                                <h3 class="card card-title">Wheight Vest</h3>
+                            </a>
+                            <p class="display-4 fw-bold">$59,90</p>
+                            <button class="btn btn-lg btn-dark w-100 p-2 py-3" type="button">+ Add to cart</button>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-8 p-4">
+                        <article class="card-item product">
+                            <a class="text-decoration-none text-dark" href="#">
+                                <img src="img/wrist-wraps.png" alt="tenis under armor"/>
+                                <h3 class="card card-title">Wrist Wraps</h3>
+                            </a>
+                            <p class="display-4 fw-bold">$29,90</p>
+                            <button class="btn btn-lg btn-dark w-100 p-2 py-3" type="button">+ Add to cart</button>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
-            <footer class="row">
-                <div class="col-4 p-4">
+            <footer id="contact" class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8 p-4">
                     <h3 class="h6">SUPPORT</h3>
                     <p class="lead">FAQS</p>
                     <p class="lead">RETURN & EXCHANGE</p>
                     <p class="lead">SHIPPING COSTS</p>
                     <p class="lead">CONTACT US</p>
                 </div>
-                <div class="col-4 p-4">
+                <div class="col-lg-4 col-md-6 col-sm-8 p-4">
                     <h3 class="h6">INFORMATION</h3>
                     <p class="lead">ABOUT US</p>
                     <p class="lead">BLOG</p>
                     <p class="lead">TERMS & CONDITIONS</p>
                     <p class="lead">PRIVACY POLICY</p>
                 </div>
-                <div class="col-4 p-4">
+                <div class="col-lg-4 col-md-6 col-sm-8 p-4">
                     <h3 class="h6">SAVE 10% ON YOUR FIRST ORDER</h3>
                     <p class="lead">Receive an exclusive 10% voucher for your first order and always find out first about our brand new products & promotions in our newsletter.</p>
                     <input class="form-control" type="text" placeholder="Your email address">
